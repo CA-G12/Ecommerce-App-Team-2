@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1274px;
+    margin: auto;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+
+/* section cart */
+
+.cart .title-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+.cart .title-cart h2{
+    font-size: 22px;
+}
+.cart .title-cart p{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+
+}
+.cart .title-cart p span{
+    font-weight: 500;
+    margin-left: 8px;
+}
+.cart .title-cart p img{
+    width: 43px;
+    margin-left: 20px;
+}
+.cart .cart-content{
+    margin-top: 34px;
+}
+
+.cart .cart-content .car-items{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.cart .cart-content .car-items .carx5{
+width: 200px;
+}
+.cart .cart-content .car-items .car-item-content{
+    margin-left: 20px;
+}
+.cart .cart-content .car-items .car-item-content h2{
+font-size: 28px;
+}
+.cart .cart-content .car-items .car-item-content p{
+    width: 62%;
+    font-size: 14px;
+}
+.cart .cart-content .car-items .cart-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart .cart-content .car-items .cart-icon button{
+    width: 27px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 9px;
+    cursor: pointer;
+}
+.cart .cart-content .car-items .cart-icon span{
+font-size: 20px;
+}
+.cart .cart-content .car-items .cart-icon .trash{
+    width: 27px;
+    cursor: pointer;
+}
+.cart .cart-content .car-items .cart-icon p{
+    margin: 0 24px;
+}
+.cart .save{
+display: flex;
+justify-content: center;
+}
+.cart .save button{
+    width: 304px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background: #000;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.cart .cart-content{
+    display: none;
+}
+.cart .image-non{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart .image-non img{
+    width: 500px;
+    margin-top: 20px;
+}

@@ -1,15 +1,10 @@
+const product = JSON.parse(localStorage.getItem('Product'));
 
-const product = {
-    name: 'First Class BMW',
-    price2: '2000',
-    desc: "New BMW for All kinds ",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/BMW_M5_IMG_0887.jpg/1200px-BMW_M5_IMG_0887.jpg?20170918155446",
-}
 const DisplayProduct = (product) => {
-    img.src = product.img;
-    title.textContent = product.name;
-    price.textContent = product.price2;
-    desc.textContent = product.desc;
+    img.src = product.photoURL;
+    title.textContent = product.TitleCar;
+    price.textContent = product.Price;
+    desc.textContent = product.Description ;
 }
 
 const CartProducts = JSON.parse(localStorage.getItem('CartProducts'));

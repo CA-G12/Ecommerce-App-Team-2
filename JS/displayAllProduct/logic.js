@@ -59,6 +59,7 @@ function displyListOfProduct(list){
         div.classList.add('customer-content');
         div.addEventListener('click',()=>{
             localStorage.setItem("Product",JSON.stringify(list[i]));
+            window.location.href = "file:///C:/Users/alawael/Desktop/GSG/W02/L03/Ecommerce-App-Team-2/html/productPage.html"
         })
         let img = document.createElement('img');
         img.setAttribute("src" , list[i].photoURL)

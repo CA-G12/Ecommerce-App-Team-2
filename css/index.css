@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1274px;
+    margin: auto;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* hero section */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/image-bg.webp);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -2;
+}
+header .logo{
+    text-align: end;
+    position: absolute;
+    right: 85px;
+    top: 52px;
+}
+header .logo img{
+    width: 120px;
+}
+header .content{
+    width: 50%;
+    bottom: 170px;
+    position: absolute;
+}
+header .content h1{
+    color: #fff;
+    font-size: 66px;
+    font-weight: 500;
+}
+header .content .btn{
+    margin-top: 28px;
+    width: 198px;
+    height: 53px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    border: 3px solid #fff;
+    line-height: 0.7;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    z-index: 111;
+    transition: all 0.3s ease-in-out;
+}
+header .content .btn:first-of-type{
+    margin-right: 20px;
+}
+header .content .btn:hover{
+    background-color: #fff;
+    color: #000;
+
+}

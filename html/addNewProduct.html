@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Product</title>
+
+    <link rel="stylesheet" href="../css/addNewProduct.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add new Product</h1>
+        <div class="productForm">
+            <form action="#">
+                <p>Name Car :</p>
+                <input type="text" id="Name-Car">
+                
+                <p>Title Car :</p>
+                <input type="text" id="Title-Car">
+
+                <p>Price:</p>
+                <input type="number" id="Price">
+
+                <p>Upload photo:</p>
+                <input type="url">
+
+                <p>Description :</p>
+                <textarea name="Description" id="Description" cols="30" rows="6"></textarea>
+
+
+                <select name="category" id="category" >
+                    <option value="cars">cars</option>
+                    <option value="bus">bus</option>
+                    <option value="jeebs">jeebs</option>
+                  </select>
+
+                <br>
+                <input type="submit" value="Save" id="submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

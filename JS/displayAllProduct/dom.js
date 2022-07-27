@@ -66,6 +66,7 @@ displyListOfProduct(list);
 
 
 searchForm.addEventListener('keyup',()=>{
+    list =  JSON.parse(localStorage.getItem("listOfProduct"));
     console.log("search")
     list = search(list,text.value)
     displyListOfProduct(list);
@@ -79,15 +80,20 @@ categoryOfProduct.addEventListener('click',()=>{
         list =  JSON.parse(localStorage.getItem("listOfProduct"));
     }
     displyListOfProduct(list);
+    list =  JSON.parse(localStorage.getItem("listOfProduct"));
 } )
 
 
 min.addEventListener('keyup',()=>{
+        list =  JSON.parse(localStorage.getItem("listOfProduct"));
+
     list = price(list,min.value , max.value);
     displyListOfProduct(list);
 })
 
 max.addEventListener('keyup',()=>{
+    list =  JSON.parse(localStorage.getItem("listOfProduct"));
+
     console.log("max")
     list = price(list,min.value , max.value);
     displyListOfProduct(list);

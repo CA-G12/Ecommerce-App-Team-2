@@ -35,7 +35,7 @@ let listOfProduct = [
 
 
 let categoryOfProduct = document.querySelector("select")
-let searchForm = document.querySelector(".bar-search img")
+let searchForm = document.querySelector(".bar-search  input[placeholder=search]")
 let text = document.querySelector(".bar-search input[placeholder=search]")
 let select = document.querySelector("select");
 
@@ -65,7 +65,8 @@ let list =  JSON.parse(localStorage.getItem("listOfProduct"));
 displyListOfProduct(list);
 
 
-searchForm.addEventListener('click',()=>{
+searchForm.addEventListener('keyup',()=>{
+    console.log("search")
     list = search(list,text.value)
     displyListOfProduct(list);
 })
@@ -81,12 +82,12 @@ categoryOfProduct.addEventListener('click',()=>{
 } )
 
 
-min.addEventListener('click',()=>{
+min.addEventListener('keyup',()=>{
     list = price(list,min.value , max.value);
     displyListOfProduct(list);
 })
 
-max.addEventListener('click',()=>{
+max.addEventListener('keyup',()=>{
     console.log("max")
     list = price(list,min.value , max.value);
     displyListOfProduct(list);

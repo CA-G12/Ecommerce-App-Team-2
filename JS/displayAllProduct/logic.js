@@ -3,11 +3,15 @@
 
 function search(list , text){
     list =  JSON.parse(localStorage.getItem("listOfProduct"));
+    console.log(list)
+    
     list = list.filter((val,index)=>{
-            if(text == list[index].NameCar.slice(0,text.length)){
+        console.log(text , list[index].NameCar.slice(0,text.length))
+            if(text.toUpperCase() == list[index].NameCar.slice(0,text.length).toUpperCase()){
                 return val
             }
     }) 
+    console.log(list)
     return list;
 } 
 

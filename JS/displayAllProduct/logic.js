@@ -2,7 +2,6 @@
 
 
 function search(list , text){
-    list =  JSON.parse(localStorage.getItem("listOfProduct"));
     console.log(list)
     
     list = list.filter((val,index)=>{
@@ -16,7 +15,6 @@ function search(list , text){
 } 
 
 function category(list , text){ 
-    list =  JSON.parse(localStorage.getItem("listOfProduct"));
     list = list.filter((val,index)=>{
             if(text == list[index].category){
                 return val
@@ -26,7 +24,6 @@ function category(list , text){
 } 
 
 function price(list ,min = 0,max = Infinity){
-    list =  JSON.parse(localStorage.getItem("listOfProduct"));
     if(max == '' )
     max = Infinity;
     if(min == '')

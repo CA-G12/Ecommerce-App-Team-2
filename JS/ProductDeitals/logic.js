@@ -18,7 +18,9 @@ const addToCart = (product, CartProducts) => {
     } else {
         cartProducts.push(product);
     }
+    location.href('./customer.html') ;
     return cartProducts;
+
 }
 function setItemTolocal() {
     localStorage.setItem("cartProducts", JSON.stringify(addToCart(product, CartProducts)))

@@ -15,11 +15,6 @@ function search(list , text){
     return list;
 } 
 
-
-
-
-
-//////////////////////////////////////////////////////////
 function category(list , text){ 
     list =  JSON.parse(localStorage.getItem("listOfProduct"));
     list = list.filter((val,index)=>{
@@ -29,10 +24,6 @@ function category(list , text){
     }) 
     return list;
 } 
-
-
-
-
 
 function price(list ,min = 0,max = Infinity){
     list =  JSON.parse(localStorage.getItem("listOfProduct"));
@@ -50,8 +41,6 @@ function price(list ,min = 0,max = Infinity){
 return list;
 }
 
-
-
 function displyListOfProduct(list){
     customercCont.innerHTML ='';
     for(let i = 0 ; i < list.length ; i++){
@@ -59,6 +48,7 @@ function displyListOfProduct(list){
         div.classList.add('customer-content');
         div.addEventListener('click',()=>{
             localStorage.setItem("Product",JSON.stringify(list[i]));
+            window.location.href = "file:///C:/Users/alawael/Desktop/GSG/W02/L03/Ecommerce-App-Team-2/html/productPage.html"
         })
         let img = document.createElement('img');
         img.setAttribute("src" , list[i].photoURL)
@@ -80,12 +70,5 @@ function displyListOfProduct(list){
 }
 
 
-// let selectProduct = JSON.parse(localStorage.getItem("Product"));
 
-
-
-
-
-{/* <img src="" alt="car">
-<h2>THE M2 COMPETITION</h2>
-<p>$1500</p> */}
+module.exports = {search , category ,price ,displyListOfProduct };

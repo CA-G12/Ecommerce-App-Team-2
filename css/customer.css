@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1274px;
+    margin: auto;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* section customer */
+
+.customer .bar-search{
+    position: relative;
+    margin-top: 52px;
+}
+.customer .bar-search input{
+    background: #F9F2F2;
+    border-radius: 20px;
+    font-size: 17px;
+    height: 47px;
+    border: none;
+    outline: none;
+    width: 105px;
+    padding-left: 19px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.customer .bar-search .search{
+    width: 563.98px;
+    padding-left: 70px;
+}
+.customer .bar-search .search-img{
+    position: absolute;
+    width: 63.68px;
+    top: 5px;
+    left: 28px;
+
+}
+.customer .bar-search select{
+    background: #F9F2F2;
+    border-radius: 20px;
+    font-size: 17px;
+    height: 47px;
+    border: none;
+    outline: none;
+    width: 134px;
+    padding-left: 19px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.customer .bar-search .shopping{
+    position: absolute;
+    width: 45px;
+    right: 48px;
+}
+
+.customer-cont{
+margin-top: 62px;
+margin-top: 62px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.customer-cont img{
+    width: 360px;
+    border-radius: 3px;
+}
+.customer-cont h2{
+    font-size: 28px;
+    margin: 20px 0;
+}
+.customer-cont p{
+    font-size: 20px;
+}
+

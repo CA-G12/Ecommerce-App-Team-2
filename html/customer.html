@@ -13,11 +13,12 @@
             <div class="bar-search">
                 <img src="../images/search-icons.png" alt="search" class="search-img">
                 <input type="text" placeholder="search" class="search">
-                <input type="text" placeholder="$Min">
-                <input type="text" placeholder="$Max">
+                <input type="text" placeholder="$Min" id="min">
+                <input type="text" placeholder="$Max" id="max">
                 <select >
+                    <option value="All">All</option>
                     <option value="cars">Cars</option>
-                    <option value="bus">Buses</option>
+                    <option value="bus">bus</option>
                     <option value="jeeps">Jeeps</option>
                 </select>
                 <img src="../images/cart-shopping-solid.svg" alt="shopping" class="shopping">
@@ -41,5 +42,7 @@
             </div>
         </div>
     </section>
+    <script src="../JS/displayAllProduct/logic.js"></script>
+    <script src="../JS/displayAllProduct/dom.js"></script>
 </body>
 </html>

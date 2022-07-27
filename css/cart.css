@@ -104,7 +104,7 @@ justify-content: center;
     cursor: pointer;
 }
 .cart .cart-content{
-    display: none;
+    display: block;
 }
 .cart .image-non{
     text-align: center;

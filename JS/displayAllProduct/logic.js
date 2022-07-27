@@ -15,11 +15,6 @@ function search(list , text){
     return list;
 } 
 
-
-
-
-
-//////////////////////////////////////////////////////////
 function category(list , text){ 
     list =  JSON.parse(localStorage.getItem("listOfProduct"));
     list = list.filter((val,index)=>{
@@ -29,10 +24,6 @@ function category(list , text){
     }) 
     return list;
 } 
-
-
-
-
 
 function price(list ,min = 0,max = Infinity){
     list =  JSON.parse(localStorage.getItem("listOfProduct"));
@@ -49,8 +40,6 @@ function price(list ,min = 0,max = Infinity){
 }) 
 return list;
 }
-
-
 
 function displyListOfProduct(list){
     customercCont.innerHTML ='';
@@ -81,12 +70,5 @@ function displyListOfProduct(list){
 }
 
 
-// let selectProduct = JSON.parse(localStorage.getItem("Product"));
 
-
-
-
-
-{/* <img src="" alt="car">
-<h2>THE M2 COMPETITION</h2>
-<p>$1500</p> */}
+module.exports = {search , category ,price ,displyListOfProduct };

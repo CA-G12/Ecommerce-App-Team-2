@@ -55,10 +55,31 @@ width: 80%;
     height: 3rem;
 }
 #submit{
-    margin-left: 40%;
+    margin-left: 30%;
     width: 20%;
     height: 4rem;
     margin-top: 2rem;
     color: #fff;
     background-color: black;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+#save{
+    /* margin-left: 55%; */
+    position: absolute;
+    left: 53rem;
+    top: 47rem;
+    margin-left: 1rem;
+    width: 20%;
+    height: 4rem;
+    color: #fff;
+    background-color: black;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+#a{
+    position: absolute;
+    font-size: 7rem;
+    left: 42rem;
+    opacity: 0;
 }

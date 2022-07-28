@@ -46,3 +46,9 @@
 
 // };
 // localStorage.setItem("Product",JSON.stringify(Product));
+
+
+
+localStorage.setItem("price", '0');
+
+localStorage.setItem("CartProducts",[]);

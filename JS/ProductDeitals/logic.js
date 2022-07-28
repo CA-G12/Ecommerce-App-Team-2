@@ -1,3 +1,5 @@
+// localStorage.setItem("cartProducts", [JSON.stringify(addToCart(product, CartProducts))]);
+
 const product = JSON.parse(localStorage.getItem('Product'));
 
 const DisplayProduct = (product) => {
@@ -7,20 +9,21 @@ const DisplayProduct = (product) => {
     desc.textContent = product.Description;
 }
 
-const CartProducts = JSON.parse(localStorage.getItem('CartProducts'));
+const CartProducts = localStorage.getItem('CartProducts');
 
 const addToCart = (product, CartProducts) => {
-price = price + product.price ; 
-    let cartProducts = [];
-    console.log(CartProducts);
-    if (CartProducts) {
-        cartProducts = [...CartProducts];
+    localStorage.setItem("price" , parseInt(localStorage.getItem("price"))+parseInt(product.Price) );
+// price = price + product.price ; 
+    // let cartProducts = [];
+    // console.log(CartProducts);
+    if (CartProducts != '') {
         cartProducts.push(product);
     } else {
-        cartProducts.push(product);
+         CartProducts = [];
+        CartProducts.push(product);
     }
-    location.href('./customer.html');
-    return cartProducts;
+    // location.href('./customer.html');
+    return CartProducts;
 
 }
 function setItemTolocal() {

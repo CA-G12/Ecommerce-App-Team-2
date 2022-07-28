@@ -72,18 +72,31 @@ a{
 margin-top: 62px;
 margin-top: 62px;
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
-align-items: center;
+/* align-items: center; */
+}
+
+.customer-content{
+    margin-top: 3rem;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 1rem;
 }
 .customer-cont img{
-    width: 360px;
-    border-radius: 3px;
+    width: 380px;
+    height: 350px;
+    /* border-radius: 3px; */
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .customer-cont h2{
     font-size: 28px;
-    margin: 20px 0;
+    margin: 1rem 2rem;
 }
 .customer-cont p{
     font-size: 20px;
+    margin: 1rem 2rem;
 }
 
